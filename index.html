@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Marketplace - Outlook, Hotmail, EDU Seller</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Dynamic Header -->
+<header>
+    <div class="container">
+        <h1><i class="fas fa-envelope"></i> Mail Marketplace</h1>
+        <p class="tagline">Trusted .EDU • Outlook • Hotmail Seller Since 2024</p>
+    </div>
+</header>
+
+<!-- Ads Banner Top -->
+<div class="ads-top">
+    <p>🎉 Special Offer: Buy 100+ Get 10 Free! 🎉</p>
+</div>
+
+<div class="container main">
+
+    <div class="products">
+        <div class="product-card" data-product="edu">
+            <h2>.EDU Mail</h2>
+            <p class="price">৳2 <small>/mail</small></p>
+            <p class="features">GitHub Pack • Unlimited Drive • Spotify • Canva Pro</p>
+            <button onclick="selectProduct('edu', 2)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-product="outlook">
+            <h2>Outlook Premium</h2>
+            <p class="price">৳২.৫ <small>/mail</small></p>
+            <p class="features">Full Cookies •  Fresh 2025</p>
+            <button onclick="selectProduct('outlook', 2.5)">Buy Now</button>
+        </div>
+
+        <div class="product-card" data-product="hotmail">
+            <h2>Hotmail Old</h2>
+            <p class="price">৳2.5 <small>/mail</small></p>
+            <p class="features">Aged Accounts • High Trust • Cookies Included</p>
+            <button onclick="selectProduct('hotmail', 2.5)">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Order Form (Hidden by default) -->
+    <div id="orderForm" class="order-form" style="display:none;">
+        <h2>Complete Your Order</h2>
+        <div class="form-group">
+            <label>Product:</label>
+            <span id="selectedProduct"></span>
+        </div>
+        <div class="form-group">
+            <label>Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1" onchange="calculateTotal()">
+        </div>
+        <div class="form-group">
+            <label>Total Amount:</label>
+            <strong id="totalAmount">৳0</strong>
+        </div>
+        <div class="form-group">
+            <label>Your Telegram Username <small>(with @)</small>:</label>
+            <input type="text" id="username" placeholder="@yourusername" required>
+        </div>
+        <div class="form-group">
+            <label>Transaction ID <small>(bKash/Nagad/Binance)</small>:</label>
+            <input type="text" id="txid" placeholder="Ex: 8K9M2P5L9Q" required>
+        </div>
+        <button onclick="placeOrder()" class="submit-btn">Submit Order</button>
+        <button onclick="cancelOrder()" class="cancel-btn">Cancel</button>
+    </div>
+
+    <!-- Payment Info -->
+    <div class="payment-info">
+        <h3>Payment Methods</h3>
+        <p><strong>bKash (Personal):</strong> 01815243007</p>
+        <p><strong>Binance Pay ID:</strong> 38017799</p>
+        <p><strong>Name:</strong> Mr Chowdhury</p>
+        <p class="note">পেমেন্ট করার পর Transaction ID + Telegram Username দিন</p>
+    </div>
+
+    <!-- Ads Place -->
+    <div class="ads-middle">
+        <p>Trusted by 5000+ Buyers • 24/7 Auto Delivery • Instant Support</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Mail Marketplace • All Rights Reserved</p>
+        <p>Support: @MailMarketplace_Support</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
