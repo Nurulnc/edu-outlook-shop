@@ -9,7 +9,7 @@ import io
 TOKEN = "8594094725:AAEtkG2hAgpn7oNxtp8uvrBiFwcaZ2d-oKA"
 ADMIN_ID = 1651695602
 
-PRICE_OUTLOOK = 3   # প্রতি Outlook/Hotmail
+PRICE_OUTLOOK = 2.5   # প্রতি Outlook/Hotmail
 PRICE_EDU = 2       # প্রতি .EDU মেইল
 
 STOCK_FILE = "stock.json"
